@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Search v1.1 by ImFuryPro</title>
+    <link rel="stylesheet" type="text/css" href="./css/justStyle-v3.0.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/liveSearch.js"></script>
+    <script>
+        $(document).ready(function() {
+            liveSearch("#search", ".employee");
+            liveSearch("#searchBlock", ".live");
+        });
+    </script>
+</head>
+<body>
+    <div id="main" class="height100">
+        <div class="mainContent">
+            <h1>Live Search without AJAX</h1>
+            <div class="block">
+                <div class="title">Live Search in Table</div>
+                <input id="search" type="text" class="field" placeholder="Поиск">
+                <table id="liveSearchTable">
+                    <thead>
+                        <tr>
+                            <td>ФИО</td>
+                            <td>Должность</td>
+                            <td>Зарплата</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="employee">
+                            <td>Иванов Иван Иванович</td>
+                            <td>SEO</td>
+                            <td>25000</td>
+                        </tr>
+                        <tr class="employee">
+                            <td>Петрова Мария Ивановна</td>
+                            <td>Тех.поддержка</td>
+                            <td>20000</td>
+                        </tr>
+                        <tr class="employee">
+                            <td>Петров Петр Иванович</td>
+                            <td>Тех.директор</td>
+                            <td>40000</td>
+                        </tr>
+                        <tr class="employee">
+                            <td>Иванов Петр Петрович</td>
+                            <td>Директор</td>
+                            <td>40000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="block">
+                <div class="title">Live Search in Blocks</div>
+                    <input id="searchBlock" type="text" class="field" placeholder="Поиск">
+                    <div id="liveSearch">
+                        <div class="list live">Test 1</div>
+                        <div class="list live">Test 1</div>
+                        <div class="list live">Test 2</div>
+                        <div class="list live">Test 3</div>
+                        <div class="list live">Test 1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
