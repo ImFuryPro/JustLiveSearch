@@ -1,5 +1,6 @@
-# Just Live Search v1.1
-Live Search without AJAX
+Just Live Search v1.1
+
+Live Search without AJAX <br />
 ----------------------------------
 Author: Иван "ImFuryPro" Сапоненко
 Version: 1.1
